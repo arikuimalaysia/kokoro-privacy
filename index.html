@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>こころのきろく プライバシーポリシー</title>
+<style>
+  :root {
+    --bg: #F4EBDD;
+    --surface: #FDFAF4;
+    --surface-soft: #F5ECDE;
+    --ink: #40382C;
+    --ink-soft: #8B7E6C;
+    --terracotta: #C08056;
+    --blue: #6E869B;
+    --line: #E4D8C4;
+    --shadow: 0 18px 44px -28px rgba(122, 92, 58, 0.55);
+    --maxw: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #251F18;
+      --surface: #2F2820;
+      --surface-soft: #362E25;
+      --ink: #EFE6D6;
+      --ink-soft: #B0A390;
+      --terracotta: #D89873;
+      --blue: #93A6B8;
+      --line: #423829;
+      --shadow: 0 18px 44px -26px rgba(0, 0, 0, 0.6);
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #F4EBDD; --surface: #FDFAF4; --surface-soft: #F5ECDE;
+    --ink: #40382C; --ink-soft: #8B7E6C; --terracotta: #C08056; --blue: #6E869B;
+    --line: #E4D8C4; --shadow: 0 18px 44px -28px rgba(122, 92, 58, 0.55);
+  }
+  :root[data-theme="dark"] {
+    --bg: #251F18; --surface: #2F2820; --surface-soft: #362E25;
+    --ink: #EFE6D6; --ink-soft: #B0A390; --terracotta: #D89873; --blue: #93A6B8;
+    --line: #423829; --shadow: 0 18px 44px -26px rgba(0, 0, 0, 0.6);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Hiragino Maru Gothic ProN", "Zen Maru Gothic", "Hiragino Sans",
+      "Yu Gothic", "Meiryo", "Noto Sans JP", system-ui, sans-serif;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 40px 24px 80px; }
+
+  header.masthead {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    gap: 14px; padding: 24px 0 34px;
+  }
+  .mark { width: 76px; height: 60px; display: block; }
+  .eyebrow {
+    font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--terracotta); font-weight: 700; margin: 0;
+  }
+  h1 { font-size: clamp(26px, 5vw, 34px); margin: 0; letter-spacing: 0.02em; text-wrap: balance; }
+  .app-name { color: var(--ink-soft); font-size: 15px; margin: 0; }
+  .updated {
+    font-size: 13px; color: var(--ink-soft); margin: 6px 0 0;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .callout {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+    padding: 20px 22px; box-shadow: var(--shadow); display: flex; gap: 14px; align-items: flex-start;
+    margin: 8px 0 36px;
+  }
+  .callout .dot { flex: none; width: 12px; height: 12px; border-radius: 50%; background: var(--terracotta); margin-top: 8px; }
+  .callout p { margin: 0; font-size: 15.5px; }
+  .callout strong { color: var(--terracotta); }
+
+  section { margin: 0 0 30px; }
+  h2 {
+    font-size: 19px; margin: 0 0 10px; letter-spacing: 0.01em;
+    display: flex; align-items: baseline; gap: 10px; text-wrap: balance;
+  }
+  h2 .num {
+    font-size: 13px; font-weight: 700; color: var(--blue);
+    font-variant-numeric: tabular-nums; letter-spacing: 0.04em;
+  }
+  p { margin: 0 0 12px; }
+  a { color: var(--terracotta); text-underline-offset: 3px; }
+  ul { margin: 0 0 12px; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; }
+  li { position: relative; padding-left: 20px; }
+  li::before {
+    content: ""; position: absolute; left: 2px; top: 0.7em;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--blue); opacity: 0.8;
+  }
+  li strong { color: var(--ink); }
+
+  hr { border: none; border-top: 1px solid var(--line); margin: 34px 0; }
+
+  .contact {
+    background: var(--surface-soft); border: 1px solid var(--line); border-radius: 18px;
+    padding: 22px 24px;
+  }
+  .contact h2 { margin-bottom: 12px; }
+  .contact dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; }
+  .contact dt { color: var(--ink-soft); font-size: 14px; }
+  .contact dd { margin: 0; }
+
+  footer.foot { text-align: center; color: var(--ink-soft); font-size: 13px; margin-top: 46px; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a { transition: opacity 0.15s ease; }
+    a:hover { opacity: 0.72; }
+  }
+  a:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 3px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <svg class="mark" viewBox="0 0 128 100" role="img" aria-label="こころのきろく">
+      <!-- こころ（背景） -->
+      <path d="M44 40 C44 40 32 52 32 63 A12 12 0 1 0 56 63 C56 52 44 40 44 40 Z"
+            fill="var(--terracotta)" opacity="0.28" />
+      <!-- 太陽 -->
+      <g stroke="var(--terracotta)" stroke-width="4.4" stroke-linecap="round">
+        <circle cx="40" cy="32" r="13" fill="var(--terracotta)" stroke="none" />
+        <line x1="40" y1="11" x2="40" y2="4" /><line x1="40" y1="53" x2="40" y2="60" />
+        <line x1="19" y1="32" x2="12" y2="32" /><line x1="61" y1="32" x2="68" y2="32" />
+        <line x1="25" y1="17" x2="20" y2="12" /><line x1="55" y1="17" x2="60" y2="12" />
+        <line x1="25" y1="47" x2="20" y2="52" /><line x1="55" y1="47" x2="60" y2="52" />
+      </g>
+      <!-- 水滴 -->
+      <path d="M92 44 C92 44 82 56 82 64 A10 10 0 1 0 102 64 C102 56 92 44 92 44 Z" fill="var(--blue)" />
+    </svg>
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="app-name">アプリ「こころのきろく」</p>
+    <p class="updated">最終更新日：2026年8月2日</p>
+  </header>
+
+  <div class="callout">
+    <span class="dot" aria-hidden="true"></span>
+    <p>「こころのきろく」で記録した内容は、<strong>すべてあなたの端末内にのみ保存</strong>されます。外部サーバーへの送信やアカウント登録はなく、当方があなたの記録を見ることはできません。</p>
+  </div>
+
+  <p>「こころのきろく」（以下「本アプリ」）は、あなたの気もちの記録をサポートするアプリです。本アプリを提供する開発者（以下「当方」）は、利用者のプライバシーを尊重します。本ポリシーは、本アプリが取り扱う情報とその取り扱い方針を説明します。</p>
+
+  <section>
+    <h2><span class="num">01</span>収集・保存する情報</h2>
+    <p>本アプリでは、利用者が入力・記録した以下の情報を扱います。</p>
+    <ul>
+      <li><strong>気もちの記録</strong>：「うれしい」「かなしい」の種類と、記録した日時</li>
+      <li><strong>メモ（任意）</strong>：記録に添える一言テキスト</li>
+      <li><strong>写真（任意）</strong>：記録に添えるためにカメラで撮影、または端末内から選択した画像</li>
+      <li><strong>位置情報（任意）</strong>：記録した場所の緯度・経度、およびそれをもとにした地名</li>
+    </ul>
+    <p>これらはすべて、利用者自身が本アプリを操作して記録したときにのみ保存されます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>情報の保存場所と管理</h2>
+    <ul>
+      <li>上記の情報は、<strong>すべて利用者の端末内にのみ保存</strong>されます。</li>
+      <li>本アプリは、<strong>外部のサーバーへ情報を送信しません</strong>。アカウント登録やログインもありません。</li>
+      <li>したがって、<strong>当方が利用者の記録内容（気もち・メモ・写真・位置情報）にアクセスすることはできません</strong>。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>端末の権限（パーミッション）の利用目的</h2>
+    <p>本アプリは、以下の権限を、それぞれの目的のためにのみ使用します。</p>
+    <ul>
+      <li><strong>カメラ</strong>：記録に写真を添えるために、写真を撮影する目的</li>
+      <li><strong>写真・メディアへのアクセス</strong>：記録に添える写真を、端末内から選ぶ目的</li>
+      <li><strong>位置情報</strong>：記録した場所を残し、「ちず」画面の地図上に表示する目的</li>
+    </ul>
+    <p>いずれの権限も、利用者が該当の操作を行ったときにのみ使用します。権限は端末の設定からいつでも無効にできます（その場合、該当機能は使えなくなります）。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>第三者のサービスについて</h2>
+    <ul>
+      <li><strong>地図表示（OpenStreetMap）</strong>：「ちず」画面で地図を表示する際、地図画像（タイル）を OpenStreetMap のサーバーから取得します。この過程で、表示中の地図範囲の位置情報が OpenStreetMap に送信されます。詳しくは <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap のプライバシーポリシー</a> をご確認ください。</li>
+      <li><strong>地名の取得</strong>：位置情報から地名を求める処理に、端末およびプラットフォームが提供する位置情報サービスを利用します。</li>
+      <li><strong>広告（Google AdMob）</strong>：本アプリは、Google の AdMob によるバナー広告を表示します。広告の配信・表示回数の測定・不正防止などのために、AdMob（Google）が、<strong>広告ID（advertising ID）などの端末識別子、IPアドレス、広告の表示・操作に関する情報</strong>などを取得・利用することがあります。これらは Google のプライバシーポリシー（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>）に従って取り扱われます。広告のパーソナライズは、端末の設定にある「広告ID」からリセット・オプトアウトできます。</li>
+    </ul>
+    <p>本アプリ自体は、上記の広告表示を除き、利用者を追跡する目的のツールを組み込んでいません。また、当方が広告のために利用者の記録内容（気もち・メモ・写真・位置情報）を第三者へ渡すことはありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>データの削除</h2>
+    <ul>
+      <li>アプリ内で、各記録を個別に削除できます。</li>
+      <li><strong>本アプリをアンインストールすると、端末内に保存されたすべての記録（写真を含む）が削除されます。</strong></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>お子さまのプライバシー</h2>
+    <p>本アプリは、特定の年齢層を対象として個人情報を収集するものではありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>本ポリシーの変更</h2>
+    <p>本ポリシーは、法令の変更や機能の追加に応じて改定されることがあります。重要な変更がある場合は、本ページの更新をもってお知らせします。</p>
+  </section>
+
+  <hr />
+
+  <div class="contact">
+    <h2><span class="num">08</span>お問い合わせ</h2>
+    <p style="margin-bottom:14px;">本ポリシーや本アプリに関するお問い合わせは、以下までご連絡ください。</p>
+    <dl>
+      <dt>開発者</dt><dd>Arikui_developer</dd>
+      <dt>連絡先</dt><dd><a href="mailto:waow8007@gmail.com">waow8007@gmail.com</a></dd>
+    </dl>
+  </div>
+
+  <footer class="foot">こころのきろく — こころのうごきを、そっと記録するアプリ</footer>
+</div>
+</body>
+</html>
